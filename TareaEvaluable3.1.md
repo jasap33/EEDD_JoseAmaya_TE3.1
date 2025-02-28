@@ -59,13 +59,13 @@ $> which java
     ¿Cuantas versiones de Java tienes instaladas? ¿ Por qué?
 
       
-     En este momento, solo tengo una versión de Java instalada en mi máquina. La razón es que no he necesitado múltiples versiones para mis proyectos actuales.
+     //En este momento, solo tengo una versión de Java instalada en mi máquina. La razón es que no he necesitado múltiples versiones para mis proyectos actuales.
      
       
     Si tienes más de una versión indica todas las versiones y rutas de instalación.
 
 
-     En este caso, solo tengo una versión de Java instalada, ubicada en la ruta /usr/bin/java.
+     //En este caso, solo tengo una versión de Java instalada, ubicada en la ruta /usr/bin/java.
 
 
 
@@ -101,7 +101,7 @@ $> which java
    - ¿ La versión de Java que te muestra es la 19? ¿ Por qué?
 
     
-     La razón por la cual se muestra la versión 19 de Java después de la instalación es porque acabo de instalar esa versión específica de Java, y la configuración e instalación se realizaron correctamente. Tres fotos hechas.
+     //La razón por la cual se muestra la versión 19 de Java después de la instalación es porque acabo de instalar esa versión específica de Java, y la configuración e instalación se realizaron correctamente. Tres fotos hechas.
 
 
 4. Configura tu sistema para que utilice la versión de Java 19 como versión por defecto a nivel de usuario. (Si ya lo tienes explica por qué)
@@ -145,7 +145,7 @@ $> which java
 
    - ¿ Qué ventajas tiene instalar SDKMan?
 
-    Usar SDKMAN trae consigo numerosas ventajas que hacen que trabajar con diferentes SDKs y lenguajes sea mucho más sencillo. Una de sus características más destacadas es la gestión de versiones, que permite instalar y alternar rápidamente entre distintas versiones de Java u otros SDKs, sin complicaciones. Además, su portabilidad lo convierte en una herramienta compatible con múltiples sistemas operativos, incluyendo macOS, Linux y Windows, lo que amplía considerablemente su alcance.
+    //Usar SDKMAN trae consigo numerosas ventajas que hacen que trabajar con diferentes SDKs y lenguajes sea mucho más sencillo. Una de sus características más destacadas es la gestión de versiones, que permite instalar y alternar rápidamente entre distintas versiones de Java u otros SDKs, sin complicaciones. Además, su portabilidad lo convierte en una herramienta compatible con múltiples sistemas operativos, incluyendo macOS, Linux y Windows, lo que amplía considerablemente su alcance.
     
     Otro punto fuerte es la facilidad con la que maneja las actualizaciones. SDKMAN se encarga de gestionar este proceso de manera automática, sin que el usuario tenga que preocuparse por configuraciones adicionales. Finalmente, es ideal para proyectos que requieren versiones específicas, ya que permite cambiar dinámicamente de versión para un proyecto sin que esto afecte a otros. Esto asegura que cada entorno de trabajo esté perfectamente adaptado a las necesidades del desarrollo en curso.
 
@@ -166,12 +166,12 @@ $> which java
 
    - ¿ Qué tienes hacer o comando tienes que utilizar (SDKMAN) para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
-     sdk default java 17.0.0-zulu
+     //sdk default java 17.0.0-zulu
 
 
    - ¿ Qué variable de Entorno tienes que modificar para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
-   Debes modificar la variable de entorno JAVA_HOME para que apunte a la ruta donde está instalada la versión 17.0.0-zulu.
+   //Debes modificar la variable de entorno JAVA_HOME para que apunte a la ruta donde está instalada la versión 17.0.0-zulu.
 
 
 7. Si necesitas compilar una aplicación de Java desde la terminal, fuera del IDE, y necesita compilarse con la version de Java 8, ¿ Cómo lo harías?
@@ -181,12 +181,12 @@ $> which java
     
    - ¿ Qué comando de SDKMAN tienes que utilizar para que a nivel de la terminal actual use la versión de Java 8?
 
-   sdk use java 8.0.302-zulu
+   //sdk use java 8.0.302-zulu
 
    - ¿ Qué comando utilizas para compilar una aplicación de Java ?
 
 
-  javac Main.java
+  //javac Main.java
 
 
 8. Un proyecto en el que estas trabajando, neceseita la versión de Java 11, pero requieres compilarlo con esa versión, pero no quieres tener siempre que recordar esto, y quieres que se active automáticamente esa versión una vez accedas al directorio del proyecto.
@@ -201,6 +201,8 @@ $> which java
 
 - Ahora al abrir IntellJ IDEA, debe activar esa versión automaticamente, pues detectar la configuración. (Incluye una captura de panntalla o GIF de la configuración))
 
+![Foto.10](img/Foto.10.png)
+
 11. Crea un nuevo proyecto en IntelliJ IDEA (TE21-Paso12) que se guarde en la carpeta TE21-Paso12.
 
 - Configura el proyecto para que utilice la versión de Java 17 descargada con SDKMAN. (Muestra una captura de pantalla de la configuración del fichero .sdkmanrc)
@@ -209,16 +211,24 @@ $> which java
 
 (Muestra una captura de pantalla de la estructura del proyecto en IntelliJ IDEA)
 
+![Foto.11](img/Foto.11.png)
+
 - Vincula el proyecto principal, con los módulos 2 y 3. (Muestra una captura de pantalla de la configuración de los módulos)
 
 12. En el módulo 2, crea una clase que se llame `Utilidades` y que tenga un método que se llame `calculadora` y que tenga los métodos de suma, resta, multiplicación y división.
 
 (Muestra el código de la clase `Utilidades` con un bloque de código)
 
+![Foto.12](img/Foto.12.png)
+
 13. En el módulo 3, crea una clase llamada `Conversor` que tenga un método que se llame `Texto_to_Uppercase` que convierta un texto a mayúsculas, y otro método que se llame `Texto_to_Lowercase` que convierta un texto a minúsculas.
 
 (Muestra el código de la clase `Conversor` con un bloque de código)
 
+ ![Foto.13](img/Foto.13.png)
+
 14. En el módulo principal, crea una clase llamada `Principal` que tenga un método `main` que instancie las clases `Utilidades` y `Conversor` y que muestre por consola el resultado de las operaciones de la clase `Utilidades` y el resultado de las operaciones de la clase `Conversor`.
 
 (Muestra un gif donde se muestre la ejecución del programa, en depuración y se visualice que no existen errores de compilación ni ejecución).
+
+![Foto.14](img/Foto.14.png)

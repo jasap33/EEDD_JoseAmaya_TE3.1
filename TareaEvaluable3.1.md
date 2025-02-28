@@ -14,6 +14,7 @@ En esta tarea de aprendizaje, aprenderás a instalar el JDK y JREs en Windows y 
 - Conocer cómo configurar Windows y Linux a nivel de sistema para utilizar diferentes versiones de Java.
 - Conocer cómo instalar y usar la herramienta SDKMan para instalar diferentes versiones de Java en Linux/MacOS/Windows.
 
+
 ### Recursos
 
 **GIF Videos**
@@ -34,44 +35,39 @@ El fichero `readme.md` debe contener los siguientes apartados:
 
 1. Revisa la configuración de tu máquina a través del terminal e indica la versión de Java que tienes instalada.
 
-```bash
+
 # Comprueba la versión de Java instalada
 $> java -version
 # Comprueba donde está instalado Java
 $> where java
 # Busca todas las versiones de Java instaladas
 $> which java
-```
+
 
 📎 _Adjunta una imagen de los comandos anteriores y responde a las siguientes preguntas_
 
 
-![Foto.1](Foto.1.png)
+![Foto.1](img/Foto.1.png)
 
 
     ¿Qué versión de Java tienes instalada?
 
-     ```bash
-
+     
      Tengo instalada la versión de Java "21.0.5" del 15 de octubre de 2024, que es una versión LTS (Long-Term Support).
 
-      ```
-
+     
     ¿Cuantas versiones de Java tienes instaladas? ¿ Por qué?
 
-       ```bash
-
+      
      En este momento, solo tengo una versión de Java instalada en mi máquina. La razón es que no he necesitado múltiples versiones para mis proyectos actuales.
      
-      ```
-
+      
     Si tienes más de una versión indica todas las versiones y rutas de instalación.
 
-    ```bash
 
      En este caso, solo tengo una versión de Java instalada, ubicada en la ruta /usr/bin/java.
 
-      ```
+
 
 2. Variables de entorno.
 
@@ -79,12 +75,12 @@ $> which java
 
    - Muestra a través de interfaz (Ventana de windows) (Usuarios y sistema) [adjuntar imagen]
 
-     ![Foto.2(1)](Foto.2(1).png)
+     ![Foto.2(1)](img/Foto.2(1).png)
 
    - Muestra a nvel de comandos (Solo usuario) (`set`) [adjuntar imagen]
 
        
-       ![Foto.2(2)](Foto.2(2).png)
+       ![Foto.2(2)](img/Foto.2(2).png)
 
 
    - Muestra el contenido de la variable `PATH` (`echo %PATH%`) y de la variable `JAVA_HOME` (`echo %JAVA_HOME%`)
@@ -94,21 +90,19 @@ $> which java
    - Ves a la página de [Adoptium](https://adoptium.net/) y descarga la versión de Java 19 para Windows y la arquitectura de tu PC (x32/x64).
      (Incluye un gif de la instalación)
 
-         ![Foto.3(1)](Foto.3(1).png)
-         ![Foto.3(2)](Foto.3(2).png)
+         ![Foto.3(1)](img/Foto.3(1).png)
+         ![Foto.3(2)](img/Foto.3(2).png)
 
    - Una vez instalado, muestra la versión de Java instalada y la ruta de instalación. (a través de comandos y adjunta una imagen)
      (`java -version` y `where java`)
 
-         ![Foto.3(3)](Foto.3(3).png)
+         ![Foto.3(3)](img/Foto.3(3).png)
 
    - ¿ La versión de Java que te muestra es la 19? ¿ Por qué?
 
-    ```bash
-
+    
      La razón por la cual se muestra la versión 19 de Java después de la instalación es porque acabo de instalar esa versión específica de Java, y la configuración e instalación se realizaron correctamente. Tres fotos hechas.
 
-      ```
 
 4. Configura tu sistema para que utilice la versión de Java 19 como versión por defecto a nivel de usuario. (Si ya lo tienes explica por qué)
 
@@ -116,7 +110,6 @@ $> which java
 
 ### 2. Utilización de SDKMan
 
-```bash
 
      * He configurado mi sistema para que utilice la versión de Java 19 como predeterminada a nivel de usuario siguiendo estos pasos:
 * Definí la variable de entorno JAVA_HOME: Configuré la variable JAVA_HOME para que apunte a la ruta de instalación de Java 19:  /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home
@@ -129,93 +122,72 @@ $> which java
 * OpenJDK 64-Bit Server VM Temurin-19.0.2+7 (build 19.0.2+7, mixed mode)
 * /Library/Java/JavaVirtualMachines/temurin-19.jdk/Contents/Home 
 
-      ```
 
 5. Instala SDKMan en Windows. (_Para ello puedes seguir la guía disponible [aquí](https://github.com/jssdocente/2425_EEDD_recursos/blob/main/UT3/docs/doc_sdkman.md)
 
    - Instala SDKMan en Windows e explica los pasos que has seguido, adjunta una captura final de SDK funcionando.
 
-   ![Foto.5(1)](Foto.5(1).png)
+   ![Foto.5(1)](img/Foto.5(1).png)
 
-   - Muestra la versión de SDKMan instalada
+   - Muestra la versión de SDKMan instalada:
 
-    ![Foto.5(2)](Foto.5(2).png)
-     ![Foto.5(3)](Foto.5(3).png)
+    ![Foto.5(2)](img/Foto.5(2).png)
+     ![Foto.5(3)](img/Foto.5(3).png)
 
    - ¿ Dónde se ha instalado SDKMan? ¿ Por qué?
 
-    ```bash
 
      SDKMAN se ha instalado en el directorio de usuario, específicamente en ~/.sdkman. Esta ubicación es ideal porque:
 * No requiere permisos de administrador para modificar archivos del sistema.
 
-      ```
 
-   - Muestra las versiones de Java que tienes instaladas a través de SDKMan
+   - Muestra las versiones de Java que tienes instaladas a través de SDKMan:
 
    - ¿ Qué ventajas tiene instalar SDKMan?
-
-   ```bash
 
     Usar SDKMAN trae consigo numerosas ventajas que hacen que trabajar con diferentes SDKs y lenguajes sea mucho más sencillo. Una de sus características más destacadas es la gestión de versiones, que permite instalar y alternar rápidamente entre distintas versiones de Java u otros SDKs, sin complicaciones. Además, su portabilidad lo convierte en una herramienta compatible con múltiples sistemas operativos, incluyendo macOS, Linux y Windows, lo que amplía considerablemente su alcance.
     
     Otro punto fuerte es la facilidad con la que maneja las actualizaciones. SDKMAN se encarga de gestionar este proceso de manera automática, sin que el usuario tenga que preocuparse por configuraciones adicionales. Finalmente, es ideal para proyectos que requieren versiones específicas, ya que permite cambiar dinámicamente de versión para un proyecto sin que esto afecte a otros. Esto asegura que cada entorno de trabajo esté perfectamente adaptado a las necesidades del desarrollo en curso.
 
-      ```
 
    - ¿ Instala la versión de Jara 8.0_302-zulu a través de SDKMan ?
 
-    ![Foto.5(4)](Foto.5(4).png)
+    ![Foto.5(4)](img/Foto.5(4).png)
 
    - ¿ Instala la versión de Java 11.0.12-zulu a través de SDKMan ?
 
-   ![Foto.5(5)](Foto.5(5).png)
+   ![Foto.5(5)](img/Foto.5(5).png)
 
    - ¿ Instala la versión de Java 17.0.0-zulu a través de SDKMan ?
 
-   ![Foto.5(6)](Foto.5(6).png)
+   ![Foto.5(6)](img/Foto.5(6).png)
 
 6. Configura tu sistema para que utilice la versión de Java 17.0.0 como versión por defecto a nivel de usuario. (Para que las aplicaciones que ejecutes utilicen esta versión de Java)
 
    - ¿ Qué tienes hacer o comando tienes que utilizar (SDKMAN) para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
-   ```bash
-
      sdk default java 17.0.0-zulu
 
-      ```
 
    - ¿ Qué variable de Entorno tienes que modificar para que una aplicación ejecutada desde la interfaz (Windows o Linux) utilize esa versión de Java?
 
-    ```bash
-
    Debes modificar la variable de entorno JAVA_HOME para que apunte a la ruta donde está instalada la versión 17.0.0-zulu.
 
-      ```
 
 7. Si necesitas compilar una aplicación de Java desde la terminal, fuera del IDE, y necesita compilarse con la version de Java 8, ¿ Cómo lo harías?
 
- ```bash
+   Primero, debes asegurarte de que la terminal esté utilizando la versión de Java 8. Esto se puede lograr con SDKMAN..
 
-   Primero, debes asegurarte de que la terminal esté utilizando la versión de Java 8. Esto se puede lograr con SDKMAN.
-
-      ```
-
+    
    - ¿ Qué comando de SDKMAN tienes que utilizar para que a nivel de la terminal actual use la versión de Java 8?
-
-   ```bash
 
    sdk use java 8.0.302-zulu
 
-      ```
-
    - ¿ Qué comando utilizas para compilar una aplicación de Java ?
 
-    ```bash
 
   javac Main.java
-   
-      ```
+
 
 8. Un proyecto en el que estas trabajando, neceseita la versión de Java 11, pero requieres compilarlo con esa versión, pero no quieres tener siempre que recordar esto, y quieres que se active automáticamente esa versión una vez accedas al directorio del proyecto.
 
